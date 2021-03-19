@@ -89,8 +89,8 @@ mkdir data
 + **ADE**: We provide [ADE20K](http://groups.csail.mit.edu/vision/datasets/ADE20K/) as an example.
 
   ```shell
-  mkdir -p data/ADE
-  cd data/ADE
+  mkdir -p data/Detection/ADE
+  cd data/Detection/ADE
   wget -v http://groups.csail.mit.edu/vision/datasets/ADE20K/ADE20K_2016_07_26.zip
   tar -xzvf ADE20K_2016_07_26.zip
   mv ADE20K_2016_07_26/* ./
@@ -99,6 +99,7 @@ mkdir data
   wget -v https://drive.google.com/file/d/1rbN0MZM4ome7gk4hRAziJ60IivkMYWbm/view?usp=sharing
   tar -xzvf ADE_split.tar.gz
   rm -vf ADE_split.tar.gz
+  mv ADE_split/* ./
   cd ../..
   ```
 
